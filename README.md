@@ -1,4 +1,4 @@
-# group-project
+# Stock Market 
 ## Contributers
 + Ozan Hessick
 + Jinjie Luo

@@ -1,5 +1,5 @@
 # group-project
-People in this group:
+## Contributers
 + Ozan Hessick
 + Jinjie Luo
 + Miguel Oyarzun
@@ -7,8 +7,8 @@ People in this group:
 + Macy Thompson
 + Michael Wu
 
-Description: 
+## Description
 
-To-do: Graphic/logo
+## To-do: Graphic/logo
 
 ## Documentation

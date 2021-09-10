@@ -3,7 +3,7 @@
 + Ozan Hessick
 + Jinjie Luo
 + Miguel Oyarzun
-+ Jonathan Su
++ Jonathan Su [(9661328)]()
 + Macy Thompson
 + Michael Wu
 

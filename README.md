@@ -1,4 +1,4 @@
-# Stock Market 
+# Flappy Bird
 ## Contributers
 + Ozan Hessick
 + Jinjie Luo
@@ -9,7 +9,7 @@
 
 ## Description
 
-A program that analyzes stocks and proceeds to buy and sell them to make the most amount possible to compete in the stock market game.
+A clone of the Flappy Bird game written in some language
 
 ## To-do: Graphic/logo
 

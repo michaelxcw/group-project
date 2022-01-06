@@ -1,4 +1,4 @@
-# Flappy Bird
+# Flappy Bird / Flappy Crush
 ## Contributers
 + Ozan Hessick
 + Jinjie Luo

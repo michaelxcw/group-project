@@ -14,3 +14,5 @@ A clone of the Flappy Bird game written in some language
 ## To-do: Graphic/logo
 
 ## Documentation
+
+Flowchart, class diagram

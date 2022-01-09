@@ -9,10 +9,14 @@
 
 ## Description
 
-A clone of the Flappy Bird game written in some language
+A clone of the Flappy Bird game written in Java.
 
 ## To-do: Graphic/logo
 
 ## Documentation
 
-Flowchart, class diagram
+Flowchart, class diagram, GUI mockups
+
+## How to run the project
+
+Download, double click JAR file

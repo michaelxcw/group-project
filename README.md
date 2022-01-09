@@ -17,6 +17,11 @@ A clone of the Flappy Bird game written in Java.
 
 Flowchart, class diagram, GUI mockups
 
-## How to run the project
+## Downloading/Running the Project
 
-Download, double click JAR file
+1. Download the repository as a .ZIP file.
+2. Unzip the .ZIP file.
+3. Navigate into the Flappy Bird subdirectory.
+4. Run the .JAR file by double clicking it.
+
+![Link to JAR file]()

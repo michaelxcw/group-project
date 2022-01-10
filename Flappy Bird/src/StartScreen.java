@@ -1,3 +1,10 @@
+/*
+* Written by:
+* Date: 
+* 
+* Purpose:
+*/
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

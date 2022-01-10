@@ -30,10 +30,10 @@ A clone of the Flappy Bird game written in Java, for the Computer Programming 2 
 
 ## 🛠️ Installation Instructions
 
-1. Download the repository as a `.ZIP` file.
-2. Unzip the `.ZIP` file.
-3. Navigate into the `Flappy Bird` subdirectory.
-4. Run the `.JAR` file by double clicking it.
+1. Download the repository as a `.ZIP` file (click the green "Code" button).
+2. Extract the `.ZIP` file.
+3. Navigate into the `group-project-main/Flappy Bird` subdirectory.
+4. Run the `FlappyBird.JAR` file by double clicking it.
 
 ![Link to JAR file]()
 

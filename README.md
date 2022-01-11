@@ -23,6 +23,8 @@ A clone of the Flappy Bird game written in Java, for the Computer Programming 2 
 
 ![Class diagram]()
 
+https://drive.google.com/file/d/1Jd4mF07UwuA5pgE3E0OgMEkVh3Q7b51s/view?usp=sharing
+
 ![GUI mockups]()
 
 ![Video of final running project]

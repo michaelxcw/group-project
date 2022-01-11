@@ -1,7 +1,7 @@
 # Flappy Bird / Flappy Crush
 ## 👨‍💻 Contributers
-+ [Ozan Hessick] :
-+ [Jinjie Luo](https://github.com/Sensxy):
++ [Ozan Hessick](https://github.com/Sensxy):
++ [Jinjie Luo] :
 + [Miguel Oyarzun] :
 + [Jonathan Su](https://github.com/9661328):
 + [Macy Thompson](https://github.com/macythompson):

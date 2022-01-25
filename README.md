@@ -2,7 +2,7 @@
 ## 👨‍💻 Contributers
 + [Ozan Hessick](https://github.com/Sensxy):
 + [Jinjie Luo] :
-+ [Miguel Oyarzun] :
++ [Miguel Oyarzun](https://github.com/miggyG):
 + [Jonathan Su](https://github.com/9661328):
 + [Macy Thompson](https://github.com/macythompson):
 + [Michael Wu](https://github.com/michaelxcw):

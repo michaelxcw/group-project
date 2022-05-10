@@ -1,10 +1,11 @@
 # Flappy Bird / Flappy Crush
 ## 👨‍💻 Contributers
 + [Ozan Hessick](https://github.com/Sensxy):
-+ [Jinjie Luo] :
 + [Miguel Oyarzun](https://github.com/miggyG):
 + [Jonathan Su](https://github.com/9661328):
-+ [Michael Wu](https://github.com/michaelxcw):
++ ~~[Michael Wu](https://github.com/michaelxcw):~~
++ ~~[Jinjie Luo]~~
++ ~~[Macy Thompson]~~
 
 ## 📝 Description
 
@@ -42,4 +43,4 @@ https://drive.google.com/file/d/1Jd4mF07UwuA5pgE3E0OgMEkVh3Q7b51s/view?usp=shari
 
 ## 🗒️ To-do: 
 
-Graphic/logo
+- [ ] Graphic/logo

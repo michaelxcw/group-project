@@ -1,4 +1,4 @@
-# Flappy Bird / Flappy Crush
+# Flappy Bird
 ## 👨‍💻 Contributers
 + [Ozan Hessick](https://github.com/Sensxy):
 + [Miguel Oyarzun](https://github.com/miggyG):
@@ -9,7 +9,7 @@
 
 ## 📝 Description
 
-A clone of the Flappy Bird game written in Java, for the Computer Programming 2 group project.
+A clone of the Flappy Bird game written in Java with a personal touch **{specify}**. Group project for computer programming 2 (2021-22).
 
 ``` Year two programming concepts used:
 + Inheritance

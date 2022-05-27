@@ -7,17 +7,18 @@ import java.util.*;
 public class Game extends PApplet {
     public static final int WIDTH = 700, HEIGHT = 393;
 
-    private PImage appIconImage, flappyLogo, startScreen, getReady;
+    private PImage appIconImage, flappyLogo, startScreen, getReady, tap;
+    private PFont flappy;
+    private SoundFile music, mouseClick, whoosh;
 
     private ArrayList<Button> buttons = new ArrayList<>();
     private Button play, leaderboard;
     private Background b;
+    private PlayerCharacter character;
 
-    private boolean start, playing, scrollingBackground;
-
-    private SoundFile music, mouseClick, whoosh;
+    private boolean startDisplay, playing, leaderboardDisplay, scrollingBackground;
     
-    float mysteryNumber;
+    float verticalOscillation;
 
     public static void main(String[] args) {
 	String[] appletArgs = new String[] { "Game" };
@@ -29,18 +30,19 @@ public class Game extends PApplet {
     }
 
     public void setup() {
-	background(0);
 	appIconImage = loadImage("flappy_icon.jpeg");
 	flappyLogo = loadImage("flappy_logo.png");
 	startScreen = loadImage("start_screen.jpg");
 	getReady = loadImage("get_ready.png");
+	tap = loadImage("tap.png");
+	flappy = createFont("FlappyBirdy.ttf", 40);
+	
 	b = new Background(this, 0, 0);
+	character = new PlayerCharacter(this, HEIGHT / 2);
 
 	createButtons();
 
-	// flappy = createFont("FlappyBirdy.ttf", 30);
-
-	start = true;
+	startDisplay = true;
 
 	music = new SoundFile(this, "music.wav");
 	mouseClick = new SoundFile(this, "mouse_click.wav");
@@ -50,12 +52,13 @@ public class Game extends PApplet {
 	surface.setTitle("Flappy Bird");
 	surface.setResizable(false);
 	surface.setIcon(appIconImage);
+
     }
 
     public void draw() {
 	tint(255);
 	
-	if (start) {
+	if (startDisplay) {
 	    image(startScreen, 0, 0);
 	    play.render();
 	    leaderboard.render();
@@ -63,13 +66,23 @@ public class Game extends PApplet {
 	
 	if (playing) {
 	    b.still();
-	    mysteryNumber = sin(radians(millis())) * 5;
-	    image(getReady, (WIDTH / 2) - (getReady.width / 2), 35 + mysteryNumber);
-
+	    verticalOscillation = sin(radians(millis() / 2)) * 4;
+	    image(getReady, (WIDTH / 2) - (getReady.width / 2), 35 + verticalOscillation);
+	    image(tap, (WIDTH / 2) - (tap.width / 2), 60 + verticalOscillation);
+	    
+	    character.render();
+	    
 	    if (scrollingBackground) {
 		b.scroll();
+		character.render();
+//		character.unfly();
+		character.update();
 	    }
 
+	}
+	
+	if (leaderboardDisplay) {
+	    background(255);
 	}
 
     }
@@ -79,16 +92,17 @@ public class Game extends PApplet {
 	    music.stop();
 	    mouseClick.play();
 
-	    start = false;
+	    startDisplay = false;
 
 	    play.setVisible(false);
 	    leaderboard.setVisible(false);
 
 	    if (play.inBounds()) {
 		playing = true;
-
-	    } else {
-		println("leaderboard");
+	    }
+	    
+	    if (leaderboard.inBounds()){
+		leaderboardDisplay = true;
 	    }
 	}
     }
@@ -96,11 +110,13 @@ public class Game extends PApplet {
     public void keyPressed(KeyEvent e) {
 	if (e.getKey() == ' ' && playing) {
 	    scrollingBackground = true;
+	    
+//	    character.fly();
 	    whoosh.play();
 	}
     }
 
-    public void createButtons() {
+    private void createButtons() {
 	play = new Button(this, "play_button.png", 270, 275);
 	leaderboard = new Button(this, "leaderboard.png", 370, 275);
 
